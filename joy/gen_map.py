@@ -16,5 +16,6 @@ def generate_map(csv_name, api_key):
     for i in range(len(lat)):
         map1.marker(lat[i], lon[i], 'red')
     html_loc = "templates/joy_map.html"
+    mapname = 'joy_map.html'
     map1.draw(html_loc)
-    return html_loc
+    return mapname
