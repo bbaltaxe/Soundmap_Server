@@ -1,6 +1,8 @@
 import pandas as pan
 import gmplot as gmp
 
+#input: the api key for google maps
+#output: the link to html file of sound map
 def generate_map(apikey):
     #opening csv
     sound_map = pan.read_csv("UCSC_Sound_Map.csv",skiprows=1,usecols = ["Latitude","Longitude"])
